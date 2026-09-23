@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 // import { Toaster } from "@/components/ui/toast";
-// import styles from "@/styles/index.css?url";
+import styles from "@/styles/index.css?url";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -20,7 +20,7 @@ export const Route = createRootRoute({
       },
     ],
     links: [
-      // { rel: "stylesheet", href: styles },
+      { rel: "stylesheet", href: styles },
       { type: "image/svg+xml", href: "/favicon.svg", rel: "icon" },
     ],
   }),
