@@ -11,6 +11,9 @@
     "typescript",
     "unicorn"
   ],
+  "categories": {
+    "correctness": "error"
+  },
   "options": {
     "typeAware": true,
     "typeCheck": true

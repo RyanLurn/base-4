@@ -12,7 +12,7 @@ export default defineConfig({
         semicolons: true,
       },
     }),
-    react(),
+    react({ compiler: true }),
     tailwindcss(),
   ],
   resolve: {
