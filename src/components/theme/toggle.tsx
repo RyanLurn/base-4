@@ -1,3 +1,4 @@
+import type { OmitKnownKeys } from "@little-nebulae/type-utils";
 import type { ComponentProps } from "react";
 
 import { Moon, Sun } from "lucide-react";
@@ -11,7 +12,9 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-export function ThemeToggle(props: ComponentProps<typeof DropdownMenuTrigger>) {
+export function ThemeToggle(
+  props: OmitKnownKeys<ComponentProps<typeof DropdownMenuTrigger>, "render">,
+) {
   const { setTheme } = useTheme();
 
   return (
