@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
+    "ui:add": "shadcn add",
     "fmt": "oxfmt --disable-nested-config",
     "fmt:check": "oxfmt --check --disable-nested-config",
     "lint": "oxlint --disable-nested-config",
