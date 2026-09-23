@@ -1,3 +1,5 @@
+import type { ComponentProps } from "react";
+
 import { Moon, Sun } from "lucide-react";
 
 import { useTheme } from "@/components/theme/provider";
@@ -9,7 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-export function ThemeToggle() {
+export function ThemeToggle(props: ComponentProps<typeof DropdownMenuTrigger>) {
   const { setTheme } = useTheme();
 
   return (
@@ -22,7 +24,8 @@ export function ThemeToggle() {
             <span className="sr-only">Toggle theme</span>
           </Button>
         }
-      ></DropdownMenuTrigger>
+        {...props}
+      />
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light

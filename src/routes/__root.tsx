@@ -2,6 +2,8 @@ import type { ReactNode } from "react";
 
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
+import { ThemeProvider } from "@/components/theme/provider";
+import { ThemeToggle } from "@/components/theme/toggle";
 import { Toaster } from "@/components/ui/toast";
 import styles from "@/styles/index.css?url";
 
@@ -34,8 +36,11 @@ function AppShell({ children }: Readonly<{ children: ReactNode }>) {
         <HeadContent />
       </head>
       <body>
-        <div className="h-screen">{children}</div>
-        <Toaster />
+        <ThemeProvider defaultTheme="system" storageKey="theme">
+          <ThemeToggle className="fixed top-3 right-3" />
+          <div className="h-screen">{children}</div>
+          <Toaster />
+        </ThemeProvider>
         <Scripts />
       </body>
     </html>
