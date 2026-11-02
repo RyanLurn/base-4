@@ -175,6 +175,12 @@ importers:
       '@fontsource-variable/geist-mono':
         specifier: 5.3.0
         version: 5.3.0
+      '@little-nebulae/error':
+        specifier: 1.4.1
+        version: 1.4.1(type-fest@5.10.0)
+      '@little-nebulae/result':
+        specifier: 1.4.0
+        version: 1.4.0
       '@tanstack/react-router':
         specifier: 1.170.46
         version: 1.170.46(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -456,6 +462,14 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@little-nebulae/error@1.4.1':
+    resolution: {integrity: sha512-ngPlRofsIvSXwJ5HoZUwMP5dIQ3QV9MfwcB8IT20UoLD7E2VU2qBmIY9jSIyU5XOf/Kb/wUFdI0YzIxwPAycyg==}
+    peerDependencies:
+      type-fest: ^5.0.0
+
+  '@little-nebulae/result@1.4.0':
+    resolution: {integrity: sha512-ItjYTaBxSXQf1+bxL6hqpySq2oG+STTCrGLxnHAZKNRrxfVt6MoC0LZvxKaOKB/VNr0uNfKvX/cKHJiWDYb5ZQ==}
 
   '@modelcontextprotocol/core@2.4.0':
     resolution: {integrity: sha512-z8QBKqdfXLPzkLQuG4xp8hrVEMm1PZ1IgxMN2sMbJiFiAKOWXnAzogXn2W4aqIBlP1ea6U5yiqVquvUNM1Cj6Q==}
@@ -2941,6 +2955,12 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
+
+  '@little-nebulae/error@1.4.1(type-fest@5.10.0)':
+    dependencies:
+      type-fest: 5.10.0
+
+  '@little-nebulae/result@1.4.0': {}
 
   '@modelcontextprotocol/core@2.4.0':
     dependencies:
